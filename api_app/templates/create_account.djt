@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/umbrellajs"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    <script src="/static/js/main.js" defer></script>
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <title>Create Memo Account</title>
+  </head>
+  <body>
+    <form class="ca-form" action="/create/account/post" method="POST">
+      <p class="ca-title">Create Account!</p>
+      {%csrf_token%}
+      <p class="ca-label">user id</p>
+      <input class="input-id" type="text" name="id" />
+      <p class="error-color" id="error-id" style="display: none">
+        id already in use
+      </p>
+      <p class="ca-label">new pw</p>
+      <input type="password" name="pw" id="pw" />
+      <p class="ca-label">confirm pw</p>
+      <input type="password" id="check-pw" />
+      <p class="error-color" id="error-ch-pw" style="display: none">
+        pw doesn't match
+      </p>
+      <div>
+        <button type="submit" id="submit-reg">sign up</button>
+      </div>
+    </form>
+  </body>
+</html>

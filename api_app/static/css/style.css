@@ -1,0 +1,46 @@
+* {
+  font-family: "JetBrains Mono", monospace;
+  margin: 0;
+  padding: 0;
+  font-size: 1.0416vw;
+}
+.ca-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #dadce0;
+  border-radius: 10px;
+  padding: 1.822916vw;
+}
+.ca-form input {
+  border-radius: 5px;
+  border: 1px solid #dadce0;
+  transition: all 0.3s;
+  width: 100%;
+}
+.ca-form input:focus {
+  border: 1px solid #1b73e8;
+  outline: none;
+  transition: all 0.3s;
+}
+.ca-form button {
+  margin-top: 1.0416vw;
+  background-color: white;
+  padding: 0.260416vw;
+  float: right;
+  border-radius: 8px;
+  outline: none;
+}
+.ca-title {
+  font-size: 1.5625vw;
+  margin-bottom: 0.78125vw;
+}
+.ca-label {
+  margin-bottom: 0.52083vw;
+}
+.error-color {
+  color: red;
+  font-size: 1.0416vw;
+  margin-top: 0.52083vw;
+}

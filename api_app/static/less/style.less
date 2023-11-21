@@ -1,0 +1,53 @@
+@vw10: %(~"%avw", 0.52083);
+@vw20: %(~"%avw", 1.0416);
+
+* {
+  font-family: "JetBrains Mono", monospace;
+  margin: 0;
+  padding: 0;
+  font-size: @vw20;
+}
+
+.ca-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #dadce0;
+  border-radius: 10px;
+  padding: %(~"%avw", 1.822916);
+  input {
+    border-radius: 5px;
+    border: 1px solid #dadce0;
+    transition: all 0.3s;
+    width: 100%;
+    &:focus {
+      border: 1px solid #1b73e8;
+      outline: none;
+      transition: all 0.3s;
+    }
+  }
+  button {
+    margin-top: @vw20;
+    background-color: white;
+    padding: 0.260416vw;
+    float: right;
+    border-radius: 8px;
+    outline: none;
+  }
+}
+
+.ca-title {
+  font-size: %(~"%avw", 1.5625);
+  margin-bottom: %(~"%avw", 0.78125);
+}
+
+.ca-label {
+  margin-bottom: @vw10;
+}
+
+.error-color {
+  color: red;
+  font-size: @vw20;
+  margin-top: @vw10;
+}
